@@ -13,6 +13,15 @@ public class NavegacionPage extends PageObject {
     @FindBy(id = "back-to-products")
     WebElementFacade botonRegresar;
 
+    @FindBy(className = "product_sort_container")
+    WebElementFacade selectorOrden;
+
+    @FindBy(className = "inventory_item_name")
+    java.util.List<WebElementFacade> listaNombres;
+
+    @FindBy(className = "inventory_item_price")
+    java.util.List<WebElementFacade> listaPrecios;
+
     public void clickEnProductoPorNombre(String nombre) {
         find(By.xpath("//div[text()='" + nombre + "']")).click();
     }
@@ -23,5 +32,17 @@ public class NavegacionPage extends PageObject {
 
     public boolean estaVisibleBotonRegresar() {
         return botonRegresar.isCurrentlyVisible();
+    }
+
+    public void seleccionarOrden(String opcion) {
+        selectorOrden.selectByVisibleText(opcion);
+    }
+
+    public String obtenerPrimerNombre() {
+        return listaNombres.get(0).getText();
+    }
+
+    public String obtenerPrimerPrecio() {
+        return listaPrecios.get(0).getText();
     }
 }

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/navegacion.feature",
         glue = "stepdefinitions",
-        tags = "@SAUCE",
+        tags = "@SAUCE2",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class NavegacionRunner {
