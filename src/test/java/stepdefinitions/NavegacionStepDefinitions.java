@@ -25,4 +25,19 @@ public class NavegacionStepDefinitions {
     public void laDescripcionDebeContenerElTexto(String texto) {
         navegacionSteps.validarDescripcion(texto);
     }
+
+    @Cuando("el usuario cambia el orden a {string}")
+    public void cambiarOrden(String opcion) {
+        navegacionSteps.cambiarOrden(opcion);
+    }
+
+    @Entonces("el primer producto de la lista debería ser {string}")
+    public void validarNombre(String nombre) {
+        navegacionSteps.validarPrimerProducto(nombre);
+    }
+
+    @Y("el precio debería ser {string}")
+    public void elPrecioDeberiaSer(String precio) {
+        navegacionSteps.validarPrecioDelPrimero(precio);
+    }
 }

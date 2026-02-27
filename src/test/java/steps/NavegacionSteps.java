@@ -23,4 +23,21 @@ public class NavegacionSteps {
     public void validarPaginaDetalle() {
         assert navegacionPage.estaVisibleBotonRegresar();
     }
+
+    @Step("Cambiar el orden de los productos")
+    public void cambiarOrden(String opcion) {
+        navegacionPage.seleccionarOrden(opcion);
+    }
+
+    @Step("Validar nombre del primer producto")
+    public void validarPrimerProducto(String nombreEsperado) {
+        String actual = navegacionPage.obtenerPrimerNombre();
+        assert actual.equals(nombreEsperado);
+    }
+
+    @Step("Validar precio del primer producto")
+    public void validarPrecioDelPrimero(String precioEsperado) {
+        String actual = navegacionPage.obtenerPrimerPrecio();
+        assert actual.equals(precioEsperado);
+    }
 }
