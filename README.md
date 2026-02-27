@@ -22,24 +22,24 @@ Antes de ejecutar las pruebas, asegúrate de tener instalado y configurado lo si
 ---
 ## 2. Features Desarrollados
 
-### 🔐 Login
+### Login
 
 * Inicio de sesión con usuario válido.
 * Validación de error con credenciales inválidas.
 
-### 🛒 Gestión de Carrito
+### Gestión de Carrito
 
 * Agregar productos al carrito.
 * Eliminar productos del carrito.
 * Validar que el número de productos en el carrito sea el correcto.
 
-### 💳 Compra
+### Compra
 
 * Flujo completo de compra.
 * Validación de formulario con datos incompletos.
 * Caso permisivo de compra.
 
-### 🚪 Logout
+### Logout
 
 * Cierre de sesión exitoso.
 
