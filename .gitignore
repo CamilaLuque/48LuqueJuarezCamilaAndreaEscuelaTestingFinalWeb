@@ -8,3 +8,6 @@ target/
 *.iws
 *.ipr
 out/
+
+# Configuración de Serenity
+serenity.properties
