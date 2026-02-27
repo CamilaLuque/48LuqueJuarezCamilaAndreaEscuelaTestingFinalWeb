@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Gestionar carrito de compras de SauceDemo" skipped="0" tests="2" time="6.41" timestamp="2026-02-27 06:18:37"><testcase name="Finalizar la compra de un producto exitosamente - OK"/><testcase name="Intentar finalizar compra sin ingresar el nombre"/></testsuite>
